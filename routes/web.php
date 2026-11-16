@@ -8,5 +8,5 @@ Route::get('/', function () {
 
 
 Route::get('/trades', [TradeController::class, 'index']);
-Route::get('/trades/{id}', [TradeController::class, 'show']);
+Route::get('/trades/{trade}', [TradeController::class, 'show']);
 Route::view('/aboutus', 'aboutus');

@@ -29,4 +29,6 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function trades() { return $this->hasMany(Trade::class); }
 }
